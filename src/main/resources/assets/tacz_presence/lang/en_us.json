@@ -1,0 +1,40 @@
+{
+  "gui.tacz.hud.no_ammo": "NO AMMO",
+  "gui.tacz.hud.reload": "RELOAD",
+  "gui.tacz.hud.low_ammo": "LOW AMMO",
+
+  "config.tacz_presence.screen_shake": "Screen Shake Settings",
+  "config.tacz_presence.shake_multiplier": "Shake Multiplier",
+  "config.tacz_presence.max_shake": "Max Shake Intensity",
+  "config.tacz_presence.pulse_shake_multiplier": "Low Health Pulse Shake",
+
+  "config.tacz_presence.visual_effects": "Visual Effects",
+  "config.tacz_presence.damage_overlay_mode": "Damage Overlay Mode",
+  "config.tacz_presence.vignette_max_alpha": "Max Vignette Opacity",
+  "config.tacz_presence.vignette_decay_rate": "Vignette Fade Speed",
+  "config.tacz_presence.enable_shooting_blur": "Enable Shooting Blur",
+  "config.tacz_presence.shooting_blur_intensity": "Shooting Blur Intensity",
+  "config.tacz_presence.shooting_blur_decay": "Shooting Blur Decay Speed",
+
+  "config.tacz_presence.hud": "HUD Settings",
+  "config.tacz_presence.enable_damage_indicator": "Enable Damage Indicator",
+  "config.tacz_presence.damage_indicator_radius": "Damage Indicator Radius",
+  "config.tacz_presence.damage_indicator_opacity": "Damage Indicator Opacity",
+
+  "config.tacz_presence.hud_alerts": "HUD Alerts",
+  "config.tacz_presence.hud_alert_y_offset": "Alert Vertical Offset",
+  "config.tacz_presence.hud_alert_scale": "Alert Text Scale",
+  "config.tacz_presence.hud_no_ammo_enabled": "Enable 'NO AMMO' Alert",
+  "config.tacz_presence.hud_no_ammo_color": "'NO AMMO' Color",
+  "config.tacz_presence.hud_reload_enabled": "Enable 'RELOAD' Alert",
+  "config.tacz_presence.hud_reload_color": "'RELOAD' Color",
+  "config.tacz_presence.hud_low_ammo_enabled": "Enable 'LOW AMMO' Alert",
+  "config.tacz_presence.hud_low_ammo_color": "'LOW AMMO' Color",
+
+  "config.tacz_presence.sounds": "Sound Settings",
+  "config.tacz_presence.enable_hit_sound": "Enable Hit Sound",
+  "config.tacz_presence.enable_super_hit_sound": "Enable Critical Hit Sound",
+  "config.tacz_presence.heartbeat_audio_enabled": "Enable Low Health Heartbeat",
+  "config.tacz_presence.enable_low_health_entry_sound": "Enable Low Health Entry Sound",
+  "config.tacz_presence.enable_low_health_exit_sound": "Enable Low Health Exit Sound"
+}

@@ -1,0 +1,32 @@
+{
+  "target_player_hit": {
+    "subtitle": "subtitle.tacz.presence.target_player_hit",
+    "sounds": [
+      "tacz_presence:entity/target_player/hit01",
+      "tacz_presence:entity/target_player/hit02",
+      "tacz_presence:entity/target_player/hit03",
+      "tacz_presence:entity/target_player/hit04"
+    ]
+  },
+  "target_player_superhit": {
+    "subtitle": "subtitle.tacz.presence.target_player_superhit",
+    "sounds": [
+      "tacz_presence:entity/target_player/superhit01",
+      "tacz_presence:entity/target_player/superhit02",
+      "tacz_presence:entity/target_player/superhit03",
+      "tacz_presence:entity/target_player/superhit04"
+    ]
+  },
+  "target_player_lownoise": {
+    "subtitle": "subtitle.tacz.presence.target_player_lownoise",
+    "sounds": [
+      "tacz_presence:entity/target_player/lownoise"
+    ]
+  },
+  "target_player_restored": {
+    "subtitle": "subtitle.tacz.target_player_restored",
+    "sounds": [
+      "tacz_presence:entity/target_player/restored"
+    ]
+  }
+}

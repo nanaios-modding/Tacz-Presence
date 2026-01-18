@@ -1,0 +1,40 @@
+{
+  "gui.tacz.hud.no_ammo": "SIN MUNICIÓN",
+  "gui.tacz.hud.reload": "RECARGAR",
+  "gui.tacz.hud.low_ammo": "MUNICIÓN BAJA",
+
+  "config.tacz_presence.screen_shake": "Configuración de Vibración",
+  "config.tacz_presence.shake_multiplier": "Multiplicador de Vibración",
+  "config.tacz_presence.max_shake": "Intensidad Máxima de Vibración",
+  "config.tacz_presence.pulse_shake_multiplier": "Vibración por Salud Baja",
+
+  "config.tacz_presence.visual_effects": "Efectos Visuales",
+  "config.tacz_presence.damage_overlay_mode": "Modo de Overlay de Daño",
+  "config.tacz_presence.vignette_max_alpha": "Opacidad Máxima de Viñeta",
+  "config.tacz_presence.vignette_decay_rate": "Velocidad de Desvanecimiento",
+  "config.tacz_presence.enable_shooting_blur": "Activar Desenfoque al Disparar",
+  "config.tacz_presence.shooting_blur_intensity": "Intensidad del Desenfoque",
+  "config.tacz_presence.shooting_blur_decay": "Velocidad de Desvanecimiento del Disparo",
+
+  "config.tacz_presence.hud": "Configuración del HUD",
+  "config.tacz_presence.enable_damage_indicator": "Activar Indicador de Daño",
+  "config.tacz_presence.damage_indicator_radius": "Radio del Indicador de Daño",
+  "config.tacz_presence.damage_indicator_opacity": "Opacidad del Indicador de Daño",
+
+  "config.tacz_presence.hud_alerts": "Alertas del HUD",
+  "config.tacz_presence.hud_alert_y_offset": "Posición Vertical de Alertas",
+  "config.tacz_presence.hud_alert_scale": "Escala del Texto de Alertas",
+  "config.tacz_presence.hud_no_ammo_enabled": "Activar Alerta 'SIN MUNICIÓN'",
+  "config.tacz_presence.hud_no_ammo_color": "Color de 'SIN MUNICIÓN'",
+  "config.tacz_presence.hud_reload_enabled": "Activar Alerta 'RECARGAR'",
+  "config.tacz_presence.hud_reload_color": "Color de 'RECARGAR'",
+  "config.tacz_presence.hud_low_ammo_enabled": "Activar Alerta 'MUNICIÓN BAJA'",
+  "config.tacz_presence.hud_low_ammo_color": "Color de 'MUNICIÓN BAJA'",
+
+  "config.tacz_presence.sounds": "Configuración de Sonido",
+  "config.tacz_presence.enable_hit_sound": "Sonido de Impacto",
+  "config.tacz_presence.enable_super_hit_sound": "Sonido de Impacto Crítico",
+  "config.tacz_presence.heartbeat_audio_enabled": "Latido por Salud Baja",
+  "config.tacz_presence.enable_low_health_entry_sound": "Sonido al Entrar en Salud Baja",
+  "config.tacz_presence.enable_low_health_exit_sound": "Sonido al Salir de Salud Baja"
+}
