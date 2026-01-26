@@ -44,13 +44,13 @@ public class ClientSideGlareDetector {
             return;
         }
 
-        // Check if glare is enabled in config
-        if (!PresenceConfig.GLARE_ENABLED.get()) {
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.level == null || mc.player == null) {
             return;
         }
 
-        Minecraft mc = Minecraft.getInstance();
-        if (mc.level == null || mc.player == null) {
+        // Check if glare is enabled in config
+        if (!PresenceConfig.GLARE_ENABLED.get()) {
             return;
         }
 

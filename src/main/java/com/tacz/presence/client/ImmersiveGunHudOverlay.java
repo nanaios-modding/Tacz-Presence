@@ -14,6 +14,7 @@ import com.tacz.guns.client.resource.index.ClientGunIndex;
 import com.tacz.guns.client.resource.pojo.display.gun.AmmoCountStyle;
 import com.tacz.guns.config.client.RenderConfig;
 import com.tacz.presence.TaczPresence;
+import com.tacz.presence.compat.CuriosCompat;
 import com.tacz.guns.resource.pojo.data.gun.Bolt;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
 import com.tacz.guns.util.AttachmentDataUtils;
@@ -266,6 +267,7 @@ public class ImmersiveGunHudOverlay implements IGuiOverlay {
                 } else {
                     // 缓存背包内的弹药数
                     handleInventoryAmmo(stack, player.getInventory());
+                    cacheInventoryAmmoCount += CuriosCompat.getCuriosAmmoCount(player, stack);
                 }
             } else {
                 cacheInventoryAmmoCount = MAX_AMMO_COUNT;

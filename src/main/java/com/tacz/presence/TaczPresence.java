@@ -30,6 +30,7 @@ public class TaczPresence {
         MinecraftForge.EVENT_BUS.register(this);
 
         context.registerConfig(ModConfig.Type.CLIENT, PresenceConfig.CLIENT_SPEC);
+        context.registerConfig(ModConfig.Type.SERVER, PresenceConfig.SERVER_SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

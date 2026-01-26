@@ -4,7 +4,9 @@ import com.tacz.guns.api.entity.IGunOperator;
 import com.tacz.guns.entity.shooter.ShooterDataHolder;
 import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.api.item.attachment.AttachmentType;
+import com.tacz.presence.PresenceConfig;
 import com.tacz.presence.TaczPresence;
+
 import com.tacz.presence.network.PresenceNetwork;
 import com.tacz.presence.network.SniperGlarePacket;
 import net.minecraft.resources.ResourceLocation;
@@ -42,6 +44,11 @@ public class SniperGlareHandler {
     @SubscribeEvent
     public static void onServerTick(TickEvent.ServerTickEvent event) {
         if (event.phase != TickEvent.Phase.END) {
+            return;
+        }
+
+        // Check if glare is enabled in config
+        if (!PresenceConfig.GLARE_ENABLED.get()) {
             return;
         }
 

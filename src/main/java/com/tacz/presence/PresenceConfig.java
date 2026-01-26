@@ -6,11 +6,17 @@ import org.apache.commons.lang3.tuple.Pair;
 public class PresenceConfig {
     public static final Client CLIENT;
     public static final ForgeConfigSpec CLIENT_SPEC;
+    public static final Server SERVER;
+    public static final ForgeConfigSpec SERVER_SPEC;
 
     static {
-        final Pair<Client, ForgeConfigSpec> specPair = new ForgeConfigSpec.Builder().configure(Client::new);
-        CLIENT_SPEC = specPair.getRight();
-        CLIENT = specPair.getLeft();
+        final Pair<Client, ForgeConfigSpec> clientSpecPair = new ForgeConfigSpec.Builder().configure(Client::new);
+        CLIENT_SPEC = clientSpecPair.getRight();
+        CLIENT = clientSpecPair.getLeft();
+
+        final Pair<Server, ForgeConfigSpec> serverSpecPair = new ForgeConfigSpec.Builder().configure(Server::new);
+        SERVER_SPEC = serverSpecPair.getRight();
+        SERVER = serverSpecPair.getLeft();
     }
 
     public enum Mode {
@@ -73,8 +79,6 @@ public class PresenceConfig {
 
     public static class Client {
         public Client(ForgeConfigSpec.Builder builder) {
-            builder.push("presence");
-
             builder.push("screen_shake");
             builder.translation("config.tacz_presence.screen_shake");
 
@@ -184,7 +188,11 @@ public class PresenceConfig {
             builder.translation("config.tacz_presence.enable_low_health_exit_sound");
             ENABLE_LOW_HEALTH_EXIT_SOUND = builder.define("EnableLowHealthExitSound", true);
             builder.pop();
+        }
+    }
 
+    public static class Server {
+        public Server(ForgeConfigSpec.Builder builder) {
             // Sniper Glare Configuration
             builder.push("sniper_glare");
             builder.translation("config.tacz_presence.sniper_glare");
@@ -232,8 +240,6 @@ public class PresenceConfig {
 
             builder.comment("Glare opacity during night + rain (0.0-1.0)");
             GLARE_OPACITY_NIGHT_RAIN = builder.defineInRange("OpacityNightRain", 0.5D, 0.0D, 1.0D);
-
-            builder.pop();
 
             builder.pop();
         }

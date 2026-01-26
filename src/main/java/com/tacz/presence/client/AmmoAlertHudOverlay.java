@@ -11,6 +11,7 @@ import com.tacz.guns.resource.pojo.data.gun.Bolt;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
 import com.tacz.guns.util.AttachmentDataUtils;
 import com.tacz.presence.PresenceConfig;
+import com.tacz.presence.compat.CuriosCompat;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
@@ -133,6 +134,7 @@ public class AmmoAlertHudOverlay implements IGuiOverlay {
                     cacheInventoryAmmoCount = iGun.getDummyAmmoAmount(stack);
                 } else {
                     handleInventoryAmmo(stack, player.getInventory());
+                    cacheInventoryAmmoCount += CuriosCompat.getCuriosAmmoCount(player, stack);
                 }
             } else {
                 cacheInventoryAmmoCount = MAX_AMMO_COUNT;

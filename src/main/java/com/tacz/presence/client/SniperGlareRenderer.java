@@ -55,14 +55,14 @@ public class SniperGlareRenderer {
             return;
         }
 
-        // Check if glare is enabled in config
-        if (!PresenceConfig.GLARE_ENABLED.get()) {
-            return;
-        }
-
         Minecraft mc = Minecraft.getInstance();
         LocalPlayer localPlayer = mc.player;
         if (localPlayer == null || mc.level == null) {
+            return;
+        }
+
+        // Check if glare is enabled in config
+        if (!PresenceConfig.GLARE_ENABLED.get()) {
             return;
         }
 
