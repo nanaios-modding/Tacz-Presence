@@ -92,6 +92,9 @@ public class PresenceHandler {
         lastHurtTime = player.hurtTime;
 
         if (isHurt) {
+            // Activar el Hit Overlay cuando se recibe un impacto
+            HitOverlay.trigger();
+
             float currentHealth = player.getHealth();
             float damage = Math.max(0, lastHealth - currentHealth);
 

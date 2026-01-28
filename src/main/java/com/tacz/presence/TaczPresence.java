@@ -10,6 +10,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import com.tacz.presence.client.DamageIndicatorOverlay;
 import com.tacz.presence.client.DamageOverlay;
+import com.tacz.presence.client.HitOverlay;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterGuiOverlaysEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -49,6 +50,7 @@ public class TaczPresence {
         @SubscribeEvent
         public static void registerOverlays(RegisterGuiOverlaysEvent event) {
             event.registerAboveAll("damage_overlay", DamageOverlay.INSTANCE);
+            event.registerAboveAll("hit_overlay", HitOverlay.INSTANCE);
             event.registerAboveAll("damage_indicator", DamageIndicatorOverlay.INSTANCE);
         }
     }
