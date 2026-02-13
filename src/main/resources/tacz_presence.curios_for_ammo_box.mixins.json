@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.tacz.presence.compat.curios_for_ammo_box",
+  "plugin": "com.tacz.presence.compat.curios_for_ammo_box.CuriosForAmmoBoxPlugin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinAmmoCacheCounter"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

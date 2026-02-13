@@ -9,6 +9,7 @@ plugins {
 mixin {
     add sourceSets.main, "tacz_presence.refmap.json"
     config "tacz_presence.mixins.json"
+    config "tacz_presence.curios_for_ammo_box.mixins.json"
 }
 
 jar {
