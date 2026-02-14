@@ -6,6 +6,7 @@ import com.tacz.guns.api.item.IAmmoBox;
 import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
 import com.tacz.guns.util.AttachmentDataUtils;
+import com.tacz.presence.compat.curios_for_ammo_box.CuriosForAmmoBoxCompat;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.ItemStack;
@@ -49,6 +50,11 @@ public class AmmoCacheCounter {
     }
 
     private static void handleInventoryAmmo(ItemStack stack, Inventory inventory) {
+        // Compat with Curios For Ammo Box mod, if loaded, to count ammo in curios slots as well
+        if(CuriosForAmmoBoxCompat.isLoaded()) {
+            inventory = CuriosForAmmoBoxCompat.transformToCuriosInventory(inventory);
+        }
+
         cacheInventoryAmmoCount = 0;
         for (int i = 0; i < inventory.getContainerSize(); i++) {
             ItemStack inventoryItem = inventory.getItem(i);
